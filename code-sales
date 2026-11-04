@@ -139,7 +139,7 @@ for transaction in transactions_clean:
 total_sales = 0
 for sale in sales: 
     total_sales += float(sale.strip("$"))
-print(total_sales)
+print(total_sales) # type: ignore
 
 thread_sold_split = []
 for sale in thread_sold:
